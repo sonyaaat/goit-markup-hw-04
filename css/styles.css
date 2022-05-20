@@ -79,23 +79,34 @@ header {
   display: flex;
   align-items: center;
 }
-.info::before {
-  content: "";
-  display: inline-block;
-  background-size: contain;
-  background-size: contain;
-  margin-right: 10px;
+.header-contacts-link {
+  display: flex;
 }
-.info-mail::before {
-  background-image: url(../svg/envelope.svg);
+.header-contacts-svg-mail {
   width: 16px;
   height: 12px;
+  margin-right: 10px;
+  fill: #757575;
 }
-.info-tel::before {
-  background-image: url(../svg/smartphone.svg);
+.header-contacts-svg-tel {
   width: 10px;
   height: 16px;
+  margin-right: 10px;
 }
+.header-contacts-link:hover .header-contacts-svg-mail,
+.header-contacts-link:focus .header-contacts-svg-mail {
+  fill: var(--accent-text);
+}
+.header-contacts-link:hover .header-contacts-svg-tel,
+.header-contacts-link:focus .header-contacts-svg-tel {
+  fill: var(--accent-text);
+}
+.header-contacts-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header-list > li:not(:last-child) {
   margin-right: 50px;
 }
@@ -373,6 +384,15 @@ header {
 .clients-svg {
   width: 106px;
   height: 60px;
+  fill: #afb1b8;
+}
+.clients-item:hover .clients-svg,
+.clients-link:focus .clients-svg {
+  fill: var(--accent-text);
+}
+.clients-item:hover,
+.clients-item:focus {
+  border: 1px solid var(--accent-text);
 }
 
 /* FOOTER */
