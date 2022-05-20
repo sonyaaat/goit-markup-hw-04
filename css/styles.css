@@ -221,7 +221,22 @@ header {
   width: calc((100%-3 * 30px) / 4);
   margin-right: 30px;
 }
-.features-item::before {
+.features-photo {
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.features-svg {
+  display: block;
+  height: 120px;
+  width: 70px;
+  height: 70px;
+}
+/* .features-item::before {
   content: "";
   display: block;
   height: 120px;
@@ -251,7 +266,7 @@ header {
   background-image: url(../images/astronaut\ 1.svg);
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
 .features-item:last-child {
   margin-right: 0;
 }
