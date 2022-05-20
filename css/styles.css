@@ -330,6 +330,7 @@ header {
 }
 .team-content {
   padding: 30px;
+  padding-bottom: 16px;
 }
 
 .team-icon {
@@ -349,6 +350,39 @@ header {
   max-width: 100%;
   width: auto;
 }
+.team-svg-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.team-svg {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+.team-svg-item:hover .team-svg {
+  fill: white;
+}
+.team-svg-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+}
+.team-svg-item:hover,
+.team-svg-item:focus {
+  background-color: var(--accent-text);
+  border-radius: 50%;
+}
+.team-svg-item {
+  margin-right: 10px;
+}
+.team-svg-item:last-child {
+  margin-right: 0px;
+}
+
 /* CLIENTS */
 .clients-title {
   font-weight: 700;
