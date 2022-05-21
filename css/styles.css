@@ -499,7 +499,29 @@ footer {
 .studio-bottom {
   color: var(--white-header);
 }
-
+.footer-container {
+  display: flex;
+}
+.footer-join {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-header);
+  margin-bottom: 20px;
+  align-items: center;
+}
+.footer-photo-list {
+  display: flex;
+}
+.footer-left {
+  margin-right: 70px;
+}
+.footer-center {
+  align-items: center;
+}
 /* PORTFOLIO HTML */
 
 /* PORTFOLIO */
@@ -556,6 +578,7 @@ button:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 .portfolio-img {
   display: block;
   max-width: 100%;
@@ -585,4 +608,36 @@ button:focus {
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+}
+.footer-svg-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+.footer-svg-item:hover .footer-svg {
+  fill: white;
+}
+
+.footer-svg-link:hover,
+.footer-svg-link:focus {
+  background-color: var(--accent-text);
+  border-radius: 50%;
+}
+.footer-svg-link:focus .footer-svg {
+  fill: white;
+}
+.footer-svg-item {
+  margin-right: 10px;
+}
+.footer-svg-item:last-child {
+  margin-right: 0px;
 }
