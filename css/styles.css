@@ -75,13 +75,6 @@ header {
 .studio {
   color: var(--headers-text);
 }
-.header-list {
-  display: flex;
-  align-items: center;
-}
-.header-contacts-link {
-  display: flex;
-}
 .header-contacts-svg-mail {
   width: 16px;
   height: 12px;
@@ -92,15 +85,32 @@ header {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+  fill: #757575;
 }
-.header-contacts-link:hover .header-contacts-svg-mail,
-.header-contacts-link:focus .header-contacts-svg-mail {
+
+.header-list {
+  display: flex;
+  align-items: center;
+}
+.info {
+  display: flex;
+}
+.header-contacts-link {
+  display: flex;
+}
+.info:hover,
+.info:focus {
+  color: var(--accent-text);
+}
+.info:hover .header-contacts-svg-mail,
+.info:focus .header-contacts-svg-mail {
   fill: var(--accent-text);
 }
-.header-contacts-link:hover .header-contacts-svg-tel,
-.header-contacts-link:focus .header-contacts-svg-tel {
+.info:hover .header-contacts-svg-tel,
+.info:focus .header-contacts-svg-tel {
   fill: var(--accent-text);
 }
+
 .header-contacts-photo {
   display: flex;
   justify-content: center;
@@ -154,10 +164,7 @@ header {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.info:hover,
-.info:focus {
-  color: var(--accent-text);
-}
+
 .active {
   color: var(--accent-text);
 }
@@ -365,16 +372,26 @@ header {
   fill: white;
 }
 .team-svg-item {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px; */
+}
+.team-svg-link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
 }
-.team-svg-item:hover,
-.team-svg-item:focus {
+.team-svg-link:hover,
+.team-svg-link:focus {
   background-color: var(--accent-text);
   border-radius: 50%;
+}
+.team-svg-link:focus .team-svg {
+  fill: white;
 }
 .team-svg-item {
   margin-right: 10px;
@@ -400,7 +417,7 @@ header {
 .clients-link {
   display: inlineblock;
 }
-.clients-item {
+.clients-link {
   width: 170px;
   height: 92px;
   display: flex;
@@ -420,9 +437,14 @@ header {
   height: 60px;
   fill: #afb1b8;
 }
-.clients-item:hover .clients-svg,
+.clients-link:hover .clients-svg,
 .clients-link:focus .clients-svg {
   fill: var(--accent-text);
+  /* border: 1px solid var(--accent-text); */
+}
+.clients-link:hover .clients-item,
+.clients-link:focus .clients-item {
+  border: 1px solid var(--accent-text);
 }
 .clients-item:hover,
 .clients-item:focus {

@@ -32,13 +32,29 @@
           </ul>
         </nav>
         <ul class="list header-contacts">
-          <li>
-            <a href="mailto:info@devstudio.com" lang="en" class="info link"
-              >info@devstudio.com</a
+          <li class="header-contacts-link">
+            <a
+              href="mailto:info@devstudio.com"
+              lang="en"
+              class="info link info-mail"
             >
+              <div class="header-contacts-photo">
+                <svg class="header-contacts-svg-mail">
+                  <use href="./images/sprite.svg#mail"></use>
+                </svg>
+              </div>
+              <span> info@devstudio.com </span>
+            </a>
           </li>
-          <li>
-            <a href="tel:+380961111111" class="info link">+38 096 111 11 11</a>
+          <li class="header-contacts-link">
+            <a href="tel:+380961111111" lang="en" class="info link info-tel">
+              <div class="header-contacts-photo">
+                <svg class="header-contacts-svg-tel">
+                  <use href="./images/sprite.svg#tel"></use>
+                </svg>
+              </div>
+              <span>+38 096 111 11 11</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -59,7 +75,7 @@
           </ul>
           <ul class="list portfolio-list">
             <li class="portfolio-item">
-              <a href="" class="link">
+              <a href="" class="link portfolio-link">
                 <img
                   src="./images/portfolio1.jpg"
                   alt="Технокряк"
