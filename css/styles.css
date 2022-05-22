@@ -501,6 +501,7 @@ footer {
 }
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 .footer-join {
   font-family: "Roboto";
