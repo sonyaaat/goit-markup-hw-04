@@ -334,10 +334,10 @@ header {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--main-text);
+  margin-bottom: 16px;
 }
 .team-content {
   padding: 30px;
-  padding-bottom: 16px;
 }
 
 .team-icon {
@@ -361,7 +361,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
 }
 .team-svg {
   width: 20px;
@@ -414,19 +413,20 @@ header {
 .clients-list {
   display: flex;
 }
+
 .clients-link {
-  display: inlineblock;
-}
-.clients-link {
+  display: inline-block;
   width: 170px;
   height: 92px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid #afb1b8;
+  outline: transparent;
+  border-radius: 4px;
 }
 .clients-item {
   margin-right: 30px;
-  border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 .clients-item:last-child {
@@ -442,8 +442,8 @@ header {
   fill: var(--accent-text);
   /* border: 1px solid var(--accent-text); */
 }
-.clients-link:hover .clients-item,
-.clients-link:focus .clients-item {
+.clients-link:hover,
+.clients-link:focus {
   border: 1px solid var(--accent-text);
 }
 .clients-item:hover,
@@ -544,6 +544,8 @@ footer {
 button:focus {
   color: var(--white-header);
   background-color: var(--accent-text);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .buttons {
   margin-bottom: 50px;
@@ -553,11 +555,7 @@ button:focus {
 .button {
   padding: 6px 22px;
 }
-.button:hover,
-.button:focus {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+
 .buttons > li {
   margin-right: 8px;
 }
